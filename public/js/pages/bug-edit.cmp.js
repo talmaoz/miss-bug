@@ -10,9 +10,22 @@ export default {
         <h2>Bug Creator: {{bug.creator.name}}</h2>
         <h2>Created at: {{getDate(bug.createdAt)}}</h2>
         <form @submit.prevent="saveBug">
-            <input v-model="bug.title" type="text" placeholder="Add Title" autofocus>
-            <input v-model="bug.description" type="text" placeholder="Add Description" >
-            <input v-model="bug.severity" type="number" placeholder="severity" >
+            <label class="edit-bug-title">
+                Title: 
+                <input v-model="bug.title" type="text" placeholder="Add Title" autofocus>
+            </label>
+            <label>
+                Description: 
+                <textarea 
+                    v-model="bug.description" type="text" placeholder="Add Description" rows="8" cols="72">
+                </textarea>
+            </label>
+            <label class="edit-bug-severity">
+                Severity: 
+                <input
+                    v-model="bug.severity" type="number" placeholder="severity" min="1" max="3"
+                >
+            </label>
             <button>Save</button>
         </form>
     </section>
