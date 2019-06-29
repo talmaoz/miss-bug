@@ -1,4 +1,5 @@
 import bugService from "../services/bug.service.js";
+import utilService from "../services/util.service.js";
 
 export default {
     name: 'bug-app',
@@ -10,14 +11,22 @@ export default {
             <thead>
                 <tr>
                     <th>Id</th>
-                    <th>Vendor</th>
+                    <th>Creator</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Severity</th>
+                    <th>Created At</th>
                     <th>Actions</th>
                 </tr>
             </thead>
             <tbody>
                 <tr v-for="bug in bugs">
-                    <td>{{bug.id}}</td>
-                    <td>{{bug.vendor}}</td>
+                    <td>{{bug._id               }}</td>
+                    <td>{{bug.creator.name      }}</td>
+                    <td>{{bug.title             }}</td>
+                    <td>{{bug.description       }}</td>
+                    <td>{{bug.severity          }}</td>
+                    <td>{{getDate(bug.createdAt)}}</td>
                     <td>
                         <router-link :to="'/bugApp/'+bug.id">Details</router-link> |
                         <router-link :to="'/bugApp/edit/'+bug.id">Edit</router-link>
@@ -46,6 +55,9 @@ export default {
                     this.bugs.splice(idx, 1)
                     // swal()
                 })
-        }
-    }
+        },
+        getDate(createdAt) {
+            return utilService.getTime(createdAt)
+        },
+    },
 }
