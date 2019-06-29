@@ -27,8 +27,8 @@ new Vue({
 
 
 // bugService.query()
-//     .then(cars => {
-//         console.log(cars)
+//     .then(bugs => {
+//         console.log(bugs)
 //     })
 // bugService.getById('c102')
 //     .then(car => {

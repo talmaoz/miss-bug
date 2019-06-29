@@ -15,13 +15,13 @@ export default {
                 </tr>
             </thead>
             <tbody>
-                <tr v-for="car in cars">
-                    <td>{{car.id}}</td>
-                    <td>{{car.vendor}}</td>
+                <tr v-for="bug in bugs">
+                    <td>{{bug.id}}</td>
+                    <td>{{bug.vendor}}</td>
                     <td>
-                        <router-link :to="'/bugApp/'+car.id">Details</router-link> |
-                        <router-link :to="'/bugApp/edit/'+car.id">Edit</router-link>
-                        <button @click="removeCar(car.id)">x</button>
+                        <router-link :to="'/bugApp/'+bug.id">Details</router-link> |
+                        <router-link :to="'/bugApp/edit/'+bug.id">Edit</router-link>
+                        <button @click="removeBug(bug.id)">x</button>
                     </td>
                 </tr>
             </tbody>
@@ -30,23 +30,22 @@ export default {
     `,
     data() {
         return {
-            cars: []
+            bugs: []
         }
     },
     created() {
         bugService.query()
-            .then(cars => this.cars = cars)
+            .then(bugs => this.bugs = bugs)
     },
     methods: {
-        removeCar(carId) {
-            bugService.remove(carId)
+        removeBug(bugId) {
+            bugService.remove(bugId)
                 .then(res => {
-                    console.log('DELETE SUCCESFULY');
-                    const idx = this.cars.findIndex(car => car.id === carId)
-                    this.cars.splice(idx, 1)
+                    console.log('DELETED SUCCESSFULLY');
+                    const idx = this.bugs.findIndex(bug => bug.id === bugId)
+                    this.bugs.splice(idx, 1)
                     // swal()
                 })
         }
     }
-
 }

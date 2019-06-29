@@ -21,7 +21,7 @@ app.use(session({
 
 app.get('/', (req, res) => res.send('Hello World!'))
 
-// const cars = [{"id": "c101", "vendor" : "Audu"}, {"id": "c102", "vendor" : "Spiat"}]
+// const bugs = [{"id": "c101", "vendor" : "Audu"}, {"id": "c102", "vendor" : "Spiat"}]
 
 // Car LIST
 app.get('/api/car', (req, res) => {
