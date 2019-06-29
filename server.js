@@ -4,7 +4,7 @@ const cookieParser = require('cookie-parser')
 const app = express()
 const port = 3000
 
-const carService = require('./services/car.service')
+const bugService = require('./services/car.service')
 
 app.use(express.static('public'))
 app.use(bodyParser.json())
@@ -19,8 +19,6 @@ app.use(session({
    cookie: { secure: false }
 }))
 
-
-
 app.get('/', (req, res) => res.send('Hello World!'))
 
 // const cars = [{"id": "c101", "vendor" : "Audu"}, {"id": "c102", "vendor" : "Spiat"}]
@@ -28,20 +26,20 @@ app.get('/', (req, res) => res.send('Hello World!'))
 // Car LIST
 app.get('/api/car', (req, res) => {
     console.log('User is: ', req.session.userName);
-    carService.query()
+    bugService.query()
         .then(cars => res.json(cars))
 })
 // Car Single
 app.get('/api/car/:id', (req, res) => {
     const carId = req.params.id
-    carService.getById(carId)
+    bugService.getById(carId)
     .then(car => res.json(car))
 })
 
 // Car Delete
 app.delete('/api/car/:id', (req, res) => {
     const carId = req.params.id
-    carService.remove(carId)
+    bugService.remove(carId)
     .then(()=>{
         res.json({})
     })
@@ -50,14 +48,14 @@ app.delete('/api/car/:id', (req, res) => {
 // Car Add
 app.post('/api/car', (req, res) => {
     const car = req.body;
-    carService.add(car)
+    bugService.add(car)
     .then(carWithId => res.json(carWithId))
 })
 
 // Car Edit
 app.put('/api/car/:id', (req, res) => {
     const car = req.body;
-    carService.update(car)
+    bugService.update(car)
     .then(car => res.json(car))
 })
 
@@ -65,6 +63,5 @@ app.get('/setUser/:name', (req, res)=>{
     req.session.userName = req.params.name
     res.end('DONE')
 })
-
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))

@@ -1,7 +1,7 @@
-import carService from "../services/car.service.js";
+import bugService from "../services/bug.service.js";
 
 export default {
-    name: 'car-app',
+    name: 'bug-app',
     template: `
     <section class="car-app">
         <h1>Cars App</h1>
@@ -34,12 +34,12 @@ export default {
         }
     },
     created() {
-        carService.query()
+        bugService.query()
             .then(cars => this.cars = cars)
     },
     methods: {
         removeCar(carId) {
-            carService.remove(carId)
+            bugService.remove(carId)
                 .then(res => {
                     console.log('DELETE SUCCESFULY');
                     const idx = this.cars.findIndex(car => car.id === carId)

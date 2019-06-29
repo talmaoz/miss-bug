@@ -1,4 +1,4 @@
-import carService from "../services/car.service.js";
+import carService from "../services/bug.service.js";
 
 export default {
     name: 'car-edit',

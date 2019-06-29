@@ -1,7 +1,7 @@
 
 import homePage from './pages/home-page.cmp.js'
 import aboutPage from './pages/about-page.cmp.js'
-import carApp from './pages/car-app.cmp.js'
+import carApp from './pages/bug-app.cmp.js'
 import carDetails from './pages/car-details.cmp.js'
 import carEdit from './pages/car-edit.cmp.js'
 

@@ -22,15 +22,15 @@ new Vue({
 
 
 
-// import carService from './services/car.service.js'
+// import bugService from './services/bug.service.js'
 
 
 
-// carService.query()
+// bugService.query()
 //     .then(cars => {
 //         console.log(cars)
 //     })
-// carService.getById('c102')
+// bugService.getById('c102')
 //     .then(car => {
 //         console.log(car)
 //     })

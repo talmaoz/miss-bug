@@ -52,7 +52,7 @@ function _makeId(length=3) {
 }
 
 function _createCars() {
-    cars = require('../data/car.json')
+    cars = require('../data/bugs.json')
     if (cars && cars.length) return cars;
     return ['Fiag', 'Subali'].map(_createCar)
 }
@@ -65,5 +65,5 @@ function _createCar(vendor) {
 }
 
 function _saveCarsToFile() {
-    fs.writeFileSync('data/car.json', JSON.stringify(cars, null, 2));
+    fs.writeFileSync('data/bugs.json', JSON.stringify(cars, null, 2));
 }
