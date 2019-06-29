@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0edc21c1-3bb0-4b7d-b133-46709a4b1b5d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/pages/car-edit.cmp.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/pages/bug-edit.cmp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/pages/home-page.cmp.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/pages/home-page.cmp.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -18,11 +17,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/pages/bug-edit.cmp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
+            <state relative-caret-position="1085">
               <caret line="35" column="1" lean-forward="true" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/js/pages/home-page.cmp.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -50,6 +58,7 @@
         <option value="$PROJECT_DIR$/public/js/pages/bug-app.cmp.js" />
         <option value="$PROJECT_DIR$/public/js/pages/bug-details.cmp.js" />
         <option value="$PROJECT_DIR$/public/js/pages/bug-edit.cmp.js" />
+        <option value="$PROJECT_DIR$/public/js/pages/home-page.cmp.js" />
       </list>
     </option>
   </component>
@@ -132,7 +141,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561798739262</updated>
-      <workItem from="1561798744608" duration="4354000" />
+      <workItem from="1561798744608" duration="4424000" />
     </task>
     <task id="LOCAL-00001" summary="WIP 1">
       <created>1561800636624</created>
@@ -169,11 +178,18 @@
       <option name="project" value="LOCAL" />
       <updated>1561803284107</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="WIP 6">
+      <created>1561803386072</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1561803386072</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4354000" />
+    <option name="totallyTimeSpent" value="4424000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -228,7 +244,8 @@
     <MESSAGE value="WIP 3" />
     <MESSAGE value="WIP 4" />
     <MESSAGE value="WIP 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="WIP 5" />
+    <MESSAGE value="WIP 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="WIP 6" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/package.json">
@@ -259,9 +276,6 @@
           <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/pages/home-page.cmp.js">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/data/bugs.json">
       <provider selected="true" editor-type-id="text-editor" />
@@ -320,8 +334,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/pages/bug-edit.cmp.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
+        <state relative-caret-position="1085">
           <caret line="35" column="1" lean-forward="true" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/pages/home-page.cmp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
         </state>
       </provider>
     </entry>
