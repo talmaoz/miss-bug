@@ -31,6 +31,6 @@ new Vue({
 //         console.log(bugs)
 //     })
 // bugService.getById('c102')
-//     .then(car => {
-//         console.log(car)
+//     .then(bug => {
+//         console.log(bug)
 //     })

@@ -23,20 +23,20 @@ app.get('/', (req, res) => res.send('Hello World!'))
 
 // const bugs = [{"id": "c101", "vendor" : "Audu"}, {"id": "c102", "vendor" : "Spiat"}]
 
-// Car LIST
+// Bug LIST
 app.get('/api/bug', (req, res) => {
     console.log('User is: ', req.session.userName);
     bugService.query()
         .then(bugs => res.json(bugs))
 })
-// Car Single
+// Bug Single
 app.get('/api/bug/:id', (req, res) => {
     const bugId = req.params.id
     bugService.getById(bugId)
     .then(bug => res.json(bug))
 })
 
-// Car Delete
+// Bug Delete
 app.delete('/api/bug/:id', (req, res) => {
     const bugId = req.params.id
     bugService.remove(bugId)
@@ -45,14 +45,14 @@ app.delete('/api/bug/:id', (req, res) => {
     })
 })
 
-// Car Add
+// Bug Add
 app.post('/api/bug', (req, res) => {
     const bug = req.body;
     bugService.add(bug)
     .then(bugWithId => res.json(bugWithId))
 })
 
-// Car Edit
+// Bug Edit
 app.put('/api/bug/:id', (req, res) => {
     const bug = req.body;
     bugService.update(bug)
