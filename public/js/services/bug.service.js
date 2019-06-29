@@ -3,25 +3,25 @@
 
 
 function query() {
-    return axios.get('/api/car')
+    return axios.get('/api/bug')
         .then(res => res.data)
 }
 
-function getById(carId) {
-    return axios.get(`/api/car/${carId}`)
+function getById(bugId) {
+    return axios.get(`/api/bug/${bugId}`)
         .then(res => res.data)
 }
 
-function remove(carId) {
-    return axios.delete(`/api/car/${carId}`)
+function remove(bugId) {
+    return axios.delete(`/api/bug/${bugId}`)
         .then(res => res.data)
 }
-function save(car) {
-    if (car.id) {
-        return axios.put(`/api/car/${car.id}`, car)
+function save(bug) {
+    if (bug.id) {
+        return axios.put(`/api/bug/${bug.id}`, bug)
         .then(res => res.data)
     } else {
-        return axios.post(`/api/car`, car)
+        return axios.post(`/api/bug`, bug)
             .then(res => res.data)
     }
 
