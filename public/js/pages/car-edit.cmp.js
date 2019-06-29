@@ -28,7 +28,7 @@ export default {
             carService.save(this.car)
             .then(car => {
                 console.log('Saved Car:', car);
-                this.$router.push('/carApp');
+                this.$router.push('/bugApp');
             })
         }
     }

@@ -4,10 +4,10 @@ new Vue({
     el: '#app',
     template: `
         <section>
-            <h2>Cars E2E</h2>
+            <h2>Miss Bug</h2>
             <router-link to="/">Home</router-link>
             <router-link to="/about">About</router-link>
-            <router-link to="/carApp">Cars App</router-link>
+            <router-link to="/bugApp">Miss Bug</router-link>
             <router-view></router-view>
         </section>
     `,

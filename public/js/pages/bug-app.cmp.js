@@ -3,9 +3,9 @@ import bugService from "../services/bug.service.js";
 export default {
     name: 'bug-app',
     template: `
-    <section class="car-app">
-        <h1>Cars App</h1>
-        <router-link to="/carApp/edit">Add Car</router-link>
+    <section class="bug-app">
+        <h1>Bug App</h1>
+        <router-link to="/bugApp/edit">Add Bug</router-link>
         <table border="1">
             <thead>
                 <tr>
@@ -19,8 +19,8 @@ export default {
                     <td>{{car.id}}</td>
                     <td>{{car.vendor}}</td>
                     <td>
-                        <router-link :to="'/carApp/'+car.id">Details</router-link> |
-                        <router-link :to="'/carApp/edit/'+car.id">Edit</router-link>
+                        <router-link :to="'/bugApp/'+car.id">Details</router-link> |
+                        <router-link :to="'/bugApp/edit/'+car.id">Edit</router-link>
                         <button @click="removeCar(car.id)">x</button>
                     </td>
                 </tr>
