@@ -40,7 +40,6 @@ export default {
         if (id) {
             bugService.getById(id)
                 .then(bug => {
-                    console.log('bug in bug-edit: ', bug)
                     return this.bug = bug
                 })
         }

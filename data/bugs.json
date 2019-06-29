@@ -1,36 +1,35 @@
 [
   {
-    "_id" : "abc123",
-    "title" : "Cannot save a Car",
-    "description" : "problem when clicking Save",
-    "severity" : 1,
-    "createdAt" : 1542107359454,
-    "creator" : {"_id" : "xyz111", "name" : "Shahar"}
+    "_id": "abc123",
+    "title": "Cannot save a Car",
+    "description": "problem when clicking Save",
+    "severity": 1,
+    "createdAt": 1542107359454,
+    "creator": {
+      "_id": "xyz111",
+      "name": "Shahar"
+    }
   },
   {
-    "_id" : "abc124",
-    "title" : "Cannot MARRY a Car",
-    "description" : "problem when explaining to the RABI",
-    "severity" : 2,
-    "createdAt" : 1542193759454,
-
-    "creator" : {"_id" : "xyz112", "name" : "Tal"}
+    "_id": "abc124",
+    "title": "Cannot MARRY a Car",
+    "description": "problem when explaining to the RABI",
+    "severity": 2,
+    "createdAt": 1542193759454,
+    "creator": {
+      "_id": "xyz112",
+      "name": "Tal"
+    }
   },
   {
-    "_id" : "abc125",
-    "title" : "Cannot change Car color",
-    "description" : "problem when clicking COlor Pallete",
-    "severity" : 1,
-    "createdAt" : 1542193769454,
-    "creator" : {"_id" : "xyz111", "name" : "Shahar"}
+    "_id": "abc125",
+    "title": "Cannot change Car color XXX",
+    "description": "problem when clicking COlor Pallete",
+    "severity": "1",
+    "createdAt": 1542193769454,
+    "creator": {
+      "_id": "xyz111",
+      "name": "Shahar"
+    }
   }
 ]
-
-
-
-
-
-
-
-
-
