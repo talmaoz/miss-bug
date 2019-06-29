@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0edc21c1-3bb0-4b7d-b133-46709a4b1b5d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/pages/bug-app.cmp.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/pages/bug-app.cmp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/pages/car-edit.cmp.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/pages/car-edit.cmp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/pages/car-details.cmp.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/pages/bug-details.cmp.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/routes.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
@@ -21,65 +18,19 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="57" column="14" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/services/car.service.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1798">
-              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/pages/car-details.cmp.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/pages/bug-app.cmp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="682">
-              <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+            <state relative-caret-position="-590">
+              <caret line="19" column="43" lean-forward="true" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/js/main.js">
+        <entry file="file://$PROJECT_DIR$/public/js/pages/bug-details.cmp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/routes.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="61">
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/css/main.css">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/services/bug.service.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="31">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="186">
+              <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -91,6 +42,7 @@
       <find>bugService</find>
       <find>index</find>
       <find>car-app</find>
+      <find>car</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -102,8 +54,9 @@
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/public/js/routes.js" />
-        <option value="$PROJECT_DIR$/public/js/pages/bug-app.cmp.js" />
         <option value="$PROJECT_DIR$/public/js/main.js" />
+        <option value="$PROJECT_DIR$/public/js/pages/bug-app.cmp.js" />
+        <option value="$PROJECT_DIR$/public/js/pages/bug-details.cmp.js" />
       </list>
     </option>
   </component>
@@ -115,63 +68,46 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+      <pane id="ProjectPane">
+        <subPane>
           <expand>
             <path>
-              <item name="miss-bug" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\GitProjects\Day44-REST-API\miss-bug" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="miss-bug" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miss-bug" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="miss-bug" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\GitProjects\Day44-REST-API\miss-bug" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="data" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="miss-bug" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miss-bug" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="miss-bug" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\GitProjects\Day44-REST-API\miss-bug" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="public" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="miss-bug" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miss-bug" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="miss-bug" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\GitProjects\Day44-REST-API\miss-bug" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="public" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="css" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="miss-bug" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miss-bug" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="miss-bug" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\GitProjects\Day44-REST-API\miss-bug" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="public" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="js" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="miss-bug" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\GitProjects\Day44-REST-API\miss-bug" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="public" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="js" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="pages" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="miss-bug" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\GitProjects\Day44-REST-API\miss-bug" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="public" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="js" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="services" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="miss-bug" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\GitProjects\Day44-REST-API\miss-bug" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="services" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="miss-bug" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miss-bug" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -203,7 +139,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561798739262</updated>
-      <workItem from="1561798744608" duration="3682000" />
+      <workItem from="1561798744608" duration="4247000" />
     </task>
     <task id="LOCAL-00001" summary="WIP 1">
       <created>1561800636624</created>
@@ -219,11 +155,25 @@
       <option name="project" value="LOCAL" />
       <updated>1561802402903</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="WIP 3">
+      <created>1561802837901</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1561802837901</updated>
+    </task>
+    <task id="LOCAL-00004" summary="WIP 4">
+      <created>1561803184352</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1561803184352</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3682000" />
+    <option name="totallyTimeSpent" value="4247000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -275,7 +225,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="WIP 1" />
     <MESSAGE value="WIP 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="WIP 2" />
+    <MESSAGE value="WIP 3" />
+    <MESSAGE value="WIP 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="WIP 4" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/package.json">
@@ -332,9 +284,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/pages/car-details.cmp.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/services/bug.service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="31">
@@ -352,17 +301,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/pages/bug-app.cmp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="279">
           <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/pages/bug-app.cmp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-590">
+          <caret line="19" column="43" lean-forward="true" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/pages/bug-details.cmp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
         </state>
       </provider>
     </entry>

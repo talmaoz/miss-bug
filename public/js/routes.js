@@ -2,7 +2,7 @@
 import homePage from './pages/home-page.cmp.js'
 import aboutPage from './pages/about-page.cmp.js'
 import bugApp from './pages/bug-app.cmp.js'
-import carDetails from './pages/car-details.cmp.js'
+import carDetails from './pages/bug-details.cmp.js'
 import carEdit from './pages/car-edit.cmp.js'
 
 const routes = [
