@@ -2,15 +2,15 @@
 import homePage from './pages/home-page.cmp.js'
 import aboutPage from './pages/about-page.cmp.js'
 import bugApp from './pages/bug-app.cmp.js'
-import carDetails from './pages/bug-details.cmp.js'
-import carEdit from './pages/bug-edit.cmp.js'
+import bugDetails from './pages/bug-details.cmp.js'
+import bugEdit from './pages/bug-edit.cmp.js'
 
 const routes = [
     { path: '/', component: homePage },
     { path: '/about', component: aboutPage },
     { path: '/bugApp', component: bugApp },
-    { path: '/bugApp/edit/:id?', component: carEdit },
-    { path: '/bugApp/:id', component: carDetails },
+    { path: '/bugApp/edit/:id?', component: bugEdit },
+    { path: '/bugApp/:id', component: bugDetails },
 ]
 
 const router = new VueRouter({
