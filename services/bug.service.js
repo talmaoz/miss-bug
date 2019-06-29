@@ -16,27 +16,27 @@ function query() {
 }
 
 function add(bug) {
-    bug.id = _makeId()
+    bug._id = _makeId()
     bugs.push(bug)
     _saveBugsToFile();
     return Promise.resolve(bug)
 }
 
 function update(bug) {
-    var bugIdx = bugs.findIndex(currbug => currbug.id === bug.id);
+    var bugIdx = bugs.findIndex(currbug => currbug._id === bug._id);
     bugs.splice(bugIdx, 1, bug);
     _saveBugsToFile();
     return Promise.resolve(bug)
 }
 
 function getById(id) {
-    var bug = bugs.find(bug => bug.id === id);
+    var bug = bugs.find(bug => bug._id === id);
     if (bug)  return Promise.resolve(bug);
     else return Promise.reject('Unknown bug');
 }
 
 function remove(id) {
-    var bugIdx = bugs.findIndex(bug => bug.id === id);
+    var bugIdx = bugs.findIndex(bug => bug._id === id);
     bugs.splice(bugIdx, 1)
     _saveBugsToFile();
     return Promise.resolve();
@@ -59,7 +59,7 @@ function _createBugs() {
 
 function _createBug(vendor) {
     return {
-        id: _makeId(),
+        _id: _makeId(),
         vendor,
     }
 }
